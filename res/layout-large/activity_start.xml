@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AA66CC"
+    android:keepScreenOn="true"
+    android:layout_gravity="center"
+	android:padding="40dp"
+    android:orientation="vertical"
+    android:id="@+id/startLayout"
+    tools:context=".StartActivity"
+    android:weightSum="2" >
+
+     <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_weight="1"
+       android:layout_marginBottom="40dp" >
+       
+       <ImageButton
+        android:id="@+id/ibMagic"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/magic2"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1" />
+       
+       <ImageButton
+        android:id="@+id/ibYugioh"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/yugioh2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+		android:layout_weight="1" />
+       
+       <ImageButton
+        android:id="@+id/ibPokemon"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/pokemon2"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3" >
+
+	    <ImageButton
+	        android:id="@+id/ibNaruto"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/naruto"
+	        android:layout_marginRight="40dp"
+	        android:layout_weight="1" />
+	    
+	    <ImageButton
+	        android:id="@+id/ibMusic"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/music_on" />
+	        
+	    <ImageButton
+	        android:id="@+id/ibOther"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/other2"
+	        android:layout_marginLeft="40dp"
+	        android:layout_weight="1" />
+  
+    </LinearLayout>    
+
+</LinearLayout>

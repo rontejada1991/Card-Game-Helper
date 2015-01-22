@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4444"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="5"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/ibTools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="@drawable/tools" />
+
+    <ImageButton
+        android:id="@+id/ibCounters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:background="@drawable/counters"
+        android:scaleType="center" />
+
+    <ImageButton
+        android:id="@+id/ibRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ibTools"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@drawable/restart" />
+
+    <EditText
+        android:id="@+id/etPlayer1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPlayer2Score"
+        android:layout_alignBottom="@+id/etPlayer2Score"
+        android:layout_alignLeft="@+id/etPlayerName1"
+        android:layout_toLeftOf="@+id/etScore"
+        android:layout_weight="2.45"
+        android:background="@drawable/edit_text_border"
+        android:ems="8"
+        android:gravity="center"
+        android:hint="P1 Score"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/etPlayerName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPlayerName1"
+        android:layout_alignBottom="@+id/etPlayerName1"
+        android:layout_alignRight="@+id/etPlayer2Score"
+        android:layout_toRightOf="@+id/etScore"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="Player 2"
+        android:imeOptions="actionDone"
+        android:maxLength="18" />
+
+    <EditText
+        android:id="@+id/etPlayer2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ibScoreSub"
+        android:layout_alignRight="@+id/ibCounters"
+        android:layout_below="@+id/etPlayerName2"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="8"
+        android:gravity="center"
+        android:hint="P2 Score"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/etScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edit_text_border"
+        android:ems="7"
+        android:gravity="center"
+        android:hint="Modifier"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <ImageButton
+        android:id="@+id/ibPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etScore"
+        android:layout_alignLeft="@+id/ibRestart"
+        android:layout_weight="1"
+        android:background="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/ibScoreSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etScore"
+        android:layout_toRightOf="@+id/etScore"
+        android:background="@drawable/minus" />
+
+    <EditText
+        android:id="@+id/etPlayerName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/ibScoreAdd"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="Player 1"
+        android:imeOptions="actionDone"
+        android:maxLength="18" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ibScoreAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibPlayer"
+        android:layout_toLeftOf="@+id/etScore"
+        android:background="@drawable/plus" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Card Game Helper</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tools">Tools</string>
+    <string name="title_activity_start_up">Setup</string>
+    <string name="title_activity_main">Scores</string>
+    <string name="title_activity_counter">Counters</string>
+    <string name="title_activity_start">Card Game Select</string>
+
+</resources>

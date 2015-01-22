@@ -1,0 +1,671 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    xmlns:ads="http://schemas.android.com/apk/res-auto"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#33B5E5"
+	    android:keepScreenOn="true"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:padding="15dp"
+	    android:weightSum="3"
+	    tools:context=".CounterActivity" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" >
+	
+		    <EditText
+		        android:id="@+id/etCounterName1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:hint="Counter 1"
+		        android:imeOptions="actionDone" />
+		    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <ImageButton
+			        android:id="@+id/ibAdd1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			   
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />
+		        
+		       <ImageButton
+			        android:id="@+id/ibSub1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />	        
+			        
+	        </LinearLayout>
+	        
+	        <EditText
+		       android:id="@+id/etCounter1"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/smaller_edit_text_border"
+		       android:ems="8"
+		       android:gravity="center"
+		       android:imeOptions="actionDone"
+		       android:inputType="number"
+		       android:maxLength="6"
+		       android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" /> 
+		       
+			<EditText
+			    android:id="@+id/etCounterName4"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 4"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	        	       
+		        <ImageButton
+			        android:id="@+id/ibSub4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />
+		           			
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+
+			<EditText
+			    android:id="@+id/etCounterName7"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 7"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	        	       
+		        <ImageButton
+			        android:id="@+id/ibSub7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />
+		           			
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter7"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+		    
+			<EditText
+			    android:id="@+id/etCounterName10"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 10"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd10"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	        	       
+		        <ImageButton
+			        android:id="@+id/ibSub10"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />
+		           			
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter10"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+		    		    		    		        
+		    <ImageButton
+		        android:id="@+id/ibScores"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/scores"
+		        android:paddingTop="40dp"
+		        android:paddingBottom="40dp"
+		        android:paddingLeft="50dp"
+		        android:paddingRight="50dp" />
+		           			        	    
+		</LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" >
+	
+		    <EditText
+		        android:id="@+id/etCounterName2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:hint="Counter 2"
+		        android:imeOptions="actionDone" />
+		    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <ImageButton
+			        android:id="@+id/ibAdd2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	            
+		       <ImageButton
+			        android:id="@+id/ibSub2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />	        
+			        
+	        </LinearLayout>
+	        
+	        <EditText
+		       android:id="@+id/etCounter2"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/smaller_edit_text_border"
+		       android:ems="8"
+		       android:gravity="center"
+		       android:imeOptions="actionDone"
+		       android:inputType="number"
+		       android:maxLength="6"
+		       android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" /> 
+		       
+			<EditText
+			    android:id="@+id/etCounterName5"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 5"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />		        
+		        	       
+		        <ImageButton
+			        android:id="@+id/ibSub5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />
+	   			
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter5"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+	
+		    <EditText
+		        android:id="@+id/etCounterName8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:hint="Counter 8"
+		        android:imeOptions="actionDone" />
+		    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <ImageButton
+			        android:id="@+id/ibAdd8"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	            
+		       <ImageButton
+			        android:id="@+id/ibSub8"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />	        
+			        
+	        </LinearLayout>
+	        
+	        <EditText
+		       android:id="@+id/etCounter8"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/smaller_edit_text_border"
+		       android:ems="8"
+		       android:gravity="center"
+		       android:imeOptions="actionDone"
+		       android:inputType="number"
+		       android:maxLength="6"
+		       android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" /> 
+		       
+			<EditText
+			    android:id="@+id/etCounterName11"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 11"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd11"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />		        
+		        	       
+		        <ImageButton
+			        android:id="@+id/ibSub11"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />
+	   			
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter11"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+		    		    	        
+		    <ImageButton
+		        android:id="@+id/ibClear"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/clear"
+		        android:paddingTop="40dp"
+		        android:paddingBottom="40dp"
+		        android:paddingLeft="50dp"
+		        android:paddingRight="50dp" />
+		           			        	    
+		</LinearLayout>    
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" >
+	
+		    <EditText
+		        android:id="@+id/etCounterName3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:hint="Counter 3"
+		        android:imeOptions="actionDone" />
+		    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <ImageButton
+			        android:id="@+id/ibAdd3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />
+		        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	            
+		        <ImageButton
+			        android:id="@+id/ibSub3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />	        
+			        
+	        </LinearLayout>
+	        
+	        <EditText
+		       android:id="@+id/etCounter3"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/smaller_edit_text_border"
+		       android:ems="8"
+		       android:gravity="center"
+		       android:imeOptions="actionDone"
+		       android:inputType="number"
+		       android:maxLength="6"
+		       android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" /> 
+		       
+			<EditText
+			    android:id="@+id/etCounterName6"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 6"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	       	       
+			        
+		        <ImageButton
+			        android:id="@+id/ibSub6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />    
+
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter6"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+
+		    <EditText
+		        android:id="@+id/etCounterName9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:hint="Counter 9"
+		        android:imeOptions="actionDone" />
+		    
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		        
+		        <ImageButton
+			        android:id="@+id/ibAdd9"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />
+		        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	
+		           	            
+		        <ImageButton
+			        android:id="@+id/ibSub9"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />	        
+			        
+	        </LinearLayout>
+	        
+	        <EditText
+		       android:id="@+id/etCounter9"
+		       android:layout_width="fill_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/smaller_edit_text_border"
+		       android:ems="8"
+		       android:gravity="center"
+		       android:imeOptions="actionDone"
+		       android:inputType="number"
+		       android:maxLength="6"
+		       android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" /> 
+		       
+			<EditText
+			    android:id="@+id/etCounterName12"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/smaller_edit_text_border"
+			    android:ems="8"
+			    android:gravity="center"
+			    android:hint="Counter 12"
+			    android:imeOptions="actionDone" />
+			
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" >
+		       
+		        <ImageButton
+			        android:id="@+id/ibAdd12"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/plus_small" />	
+			        
+		       <TextView 
+		           android:layout_width="80dp"
+		           android:layout_height="wrap_content" />	       	       
+			        
+		        <ImageButton
+			        android:id="@+id/ibSub12"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/minus_small" />    
+
+			</LinearLayout>
+			
+		    <EditText
+		    	android:id="@+id/etCounter12"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/smaller_edit_text_border"
+		        android:ems="8"
+		        android:gravity="center"
+		        android:imeOptions="actionDone"
+		        android:inputType="number"
+		        android:maxLength="6"
+		        android:text="0" />
+		    
+		    <TextView 
+		       android:layout_width="wrap_content"
+		       android:layout_height="20dp" />
+		    		    		        
+		    <ImageButton
+		        android:id="@+id/ibTools"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/tools"
+		        android:paddingTop="40dp"
+		        android:paddingBottom="40dp"
+		        android:paddingLeft="50dp"
+		        android:paddingRight="50dp" />
+		           			        	    
+		</LinearLayout>    
+	</LinearLayout>
+</ScrollView>
